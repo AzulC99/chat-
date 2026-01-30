@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Dashboard Dual | OKLCH Edition</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/glass-fx.css">
+</head>
+<body>
+
+    <main class="dashboard">
+        
+        <section class="glass-panel" id="user1">
+            <nav class="menu">
+                <button class="menu-item active" title="Chat">💬</button>
+                <label class="menu-item" title="Adjuntar imagen">
+                    <input type="file" id="file1" accept="image/*" hidden>
+                    📎
+                </label>
+                <button class="menu-item delete-all" title="Limpiar historial">🗑️</button>
+            </nav>
+
+            <div class="chat-area">
+                <div class="messages" id="display1"></div>
+                
+                <div class="typing-indicator" id="typing1">Alpha está escribiendo...</div>
+
+                <div class="input-group">
+                    <input type="text" id="input1" placeholder="Escribe un mensaje..." autocomplete="off">
+                    <button id="send1" style="background-color: var(--primary-hsl)">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-panel" id="user2">
+            <nav class="menu">
+                <button class="menu-item active" title="Chat">💬</button>
+                <label class="menu-item" title="Adjuntar imagen">
+                    <input type="file" id="file2" accept="image/*" hidden>
+                    📎
+                </label>
+                <button class="menu-item delete-all" title="Limpiar historial">🗑️</button>
+            </nav>
+
+            <div class="chat-area">
+                <div class="messages" id="display2"></div>
+                
+                <div class="typing-indicator" id="typing2">Beta está escribiendo...</div>
+
+                <div class="input-group">
+                    <input type="text" id="input2" placeholder="Escribe un mensaje..." autocomplete="off">
+                    <button id="send2" style="background-color: var(--accent-oklch)">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
